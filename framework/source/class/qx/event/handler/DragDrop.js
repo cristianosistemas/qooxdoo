@@ -329,11 +329,6 @@ qx.Class.define("qx.event.handler.DragDrop",
             current = null;
           }
         }
-
-        if (current != old) {
-          this.__currentAction = current;
-          this.__fireEvent("dragchange", this.__dragTarget, this.__dropTarget, false);
-        }
       }
     },
 
